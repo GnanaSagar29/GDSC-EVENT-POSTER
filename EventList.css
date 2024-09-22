@@ -1,0 +1,96 @@
+/* src/components/EventList.css */
+
+/* Main container for the event list */
+.event-list {
+    max-width: 800px; /* Limit max width for readability */
+    margin: 40px auto; /* Center the container with top margin */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+  }
+  
+  /* Title styling */
+  .event-list h2 {
+    font-size: 32px; /* Larger font size for the title */
+    color: #343a40; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+  }
+  
+  /* Link to create event */
+  .event-list a {
+    display: inline-block; /* Inline-block for proper spacing */
+    margin: 15px 0; /* Margin for space around the link */
+    padding: 12px 20px; /* Padding for the button */
+    background-color: #2184f5; /* Primary color for button */
+    color: rgb(0, 0, 0); /* White text for contrast */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  /* Hover effect for create event link */
+  .event-list a:hover {
+    background-color: #0b78d8; /* Darker shade on hover */
+  }
+  
+  /* List styling */
+  .event-list ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  /* Individual list item styling */
+  .event-list li {
+    margin: 15px 0; /* Space between items */
+    padding: 15px; /* Padding for items */
+    background-color: #ffffff; /* White background for items */
+    border: 1px solid #ddd; /* Light border around items */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Transition for scaling effect */
+  }
+  
+  /* Hover effect for list items */
+  .event-list li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+  }
+  
+  /* Title inside each list item */
+  .event-list h3 {
+    font-size: 24px; /* Font size for event title */
+    color: #ffffff; /* Primary color for event title */
+    margin: 0 0 10px; /* Space below the title */
+  }
+  
+  /* Description inside each list item */
+  .event-list p {
+    font-size: 16px; /* Font size for description */
+    color: #495057; /* Gray color for description */
+    line-height: 1.5; /* Improved line height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .event-list {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    .event-list h2 {
+      font-size: 28px; /* Smaller title on smaller screens */
+    }
+  
+    .event-list h3 {
+      font-size: 20px; /* Smaller event title on smaller screens */
+    }
+  
+    .event-list p {
+      font-size: 14px; /* Smaller description on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,51 @@
+/* src/components/EventDetails.css */
+
+/* Main container for event details */
+.event-details {
+    max-width: 800px; /* Limit max width for readability */
+    margin: 40px auto; /* Center the container with top margin */
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+  }
+  
+  /* Title styling */
+  .event-details h2 {
+    font-size: 32px; /* Larger font size for the title */
+    color: #333; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  /* Paragraph styling */
+  .event-details p {
+    font-size: 18px; /* Readable font size for text */
+    color: #555; /* Slightly lighter color for description */
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 15px; /* Space between paragraphs */
+  }
+  
+  /* Event image styling */
+  .event-details img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-top: 20px; /* Space above the image */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .event-details {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    .event-details h2 {
+      font-size: 28px; /* Smaller title on smaller screens */
+    }
+  
+    .event-details p {
+      font-size: 16px; /* Smaller text on smaller screens */
+    }
+  }
+  

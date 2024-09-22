@@ -1,0 +1,81 @@
+/* src/App.css or src/components/EventCreate.css */
+
+/* Container styles */
+.create-event-form {
+    max-width: 600px;
+    margin: 40px auto;  /* Space from top */
+    padding: 20px;
+    background-color: #ffffff;  /* White background for contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styles */
+  .create-event-form h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;  /* Dark color for better readability */
+  }
+  
+  /* Form styles */
+  .create-event-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-event-form input,
+  .create-event-form textarea {
+    width: 100%;
+    padding: 15px;  /* Increased padding for better touch targets */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;  /* Light gray border */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+  }
+  
+  /* Focus state */
+  .create-event-form input:focus,
+  .create-event-form textarea:focus {
+    border-color: #007bff;  /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Subtle glow effect */
+  }
+  
+  /* Textarea styles */
+  .create-event-form textarea {
+    resize: vertical;  /* Allow vertical resizing */
+    min-height: 100px;  /* Minimum height */
+  }
+  
+  /* Button styles */
+  .create-event-form button {
+    background-color: #007bff;  /* Bootstrap primary color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;  /* Transition effects */
+  }
+  
+  /* Button hover state */
+  .create-event-form button:hover {
+    background-color: #0056b3;  /* Darker shade on hover */
+    transform: translateY(-2px);  /* Lift effect on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .create-event-form {
+      padding: 15px;  /* Reduced padding on smaller screens */
+    }
+  
+    .create-event-form h2 {
+      font-size: 24px;  /* Smaller title on smaller screens */
+    }
+  }
+  
